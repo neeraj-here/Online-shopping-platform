@@ -1,0 +1,27 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  /* The image used */
+  background-image: url("Media/image.jpg");
+
+  height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+header{
+     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+    padding: 40px;
+    color: white;
+}
+h1{
+    font-size: 4em;
+    margin-bottom: 1px;
+}

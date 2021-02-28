@@ -1,6 +1,6 @@
 import React, {useEffect} from "react";
 import './UnderDevelopment.css'
-import Gif from './SewingGIF.gif'
+import Gif from './Media/SewingGIF.gif'
 function UnderDev() {
     useEffect(() => {
     document.title = "indo-fashion"
