@@ -7,7 +7,9 @@ function UnderDev() {
   })
     return (
         <main>
+<div className="UnderDev">
             <img src={Gif} alt="couldn't load" />
+</div>
         </main>
     )
 }

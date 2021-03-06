@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import './App.css';
 import UnderDevelopment from './UnderDevelopment.js'
 import LandingPage from "./LandingPage";
+import Navbar from "./Navbar";
 
 function App() {
   const [isUnderDev, setIsUnderDev] = React.useState(false)
@@ -11,7 +12,7 @@ function App() {
   }
   return (
     <div className="App">
-      <LandingPage />
+      <Navbar />
     </div>
   );
 }
