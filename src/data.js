@@ -23,6 +23,23 @@ export const links = [
   // },
 ]
 
+export const products = [
+  {
+    id: 1,
+    imgUrl: "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/11487290/2020/6/17/a373687f-fa13-4ccc-805a-ddd29d7a36171592396666743-Nautica-Men-Tshirts-4681592396665313-1.jpg",
+    brand: "Duke",
+    title: "Men Solid Polo collar T-shirt",
+    price: 1499    
+  },
+  {
+    id: 2,
+    imgUrl: "https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/11165918/2020/8/28/350f8661-4f8a-435f-b950-6fa0e2da089d1598600506286-Levis-Men-Tshirts-4471598600504759-1.jpg",
+    brand: "Levis",
+    title: "Super Mario Print T-shirt",
+    price: 1999    
+  },
+]
+
 export const social = [
   {
     id: 1,

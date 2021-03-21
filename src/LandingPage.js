@@ -2,7 +2,7 @@ import React from 'react'
 import './LandingPage.css'
 function LandingPage() {
     return (
-        <div className="container">
+        <div className="landingPage-container">
         <header>
             <h1>Indo-Fashion</h1>
             <h2>Buy Your Style</h2>

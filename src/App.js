@@ -4,16 +4,16 @@ import './App.css';
 import UnderDevelopment from './UnderDevelopment.js'
 import LandingPage from "./LandingPage";
 import Navbar from "./Navbar";
+import Authentication from './Authentication'
+import { AuthProvider } from "./AuthContext";
+import Products from "./Products";
 
 function App() {
-  const [isUnderDev, setIsUnderDev] = React.useState(false)
-  if (isUnderDev) {
-    return <UnderDevelopment />
-  }
+
   return (
-    <div className="App">
-      <Navbar />
-    </div>
+      <AuthProvider>
+        <Products />
+      </AuthProvider> 
   );
 }
 
