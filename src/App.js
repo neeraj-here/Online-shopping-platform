@@ -7,13 +7,20 @@ import Navbar from "./Navbar";
 import Authentication from './Authentication'
 import { AuthProvider } from "./AuthContext";
 import Products from "./Products";
+import Footer from "./Footer";
+import Bucket from "./Bucket";
+import { bucket } from './data'
 
 function App() {
+  const [bucketItems, setBucketItems] = React.useState(bucket)
 
   return (
-      <AuthProvider>
-        <Products />
-      </AuthProvider> 
+    <AuthProvider>
+      <Navbar />
+      <Products setBucketItems={setBucketItems} />
+      <Bucket bucketItems = {bucketItems} />
+      <Footer />
+    </AuthProvider> 
   );
 }
 

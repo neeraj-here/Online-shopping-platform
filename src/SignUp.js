@@ -50,7 +50,7 @@ function SignUp() {
                             <Form.Control type="password" required ref={passwordConfirmRef} />
                         </Form.Group>
                         <Button className="w-100" type="submit" disabled={loading}>
-                            {loading ? "Signing Up.." : "Sign Up"}
+                            {loading ? "Signing Up..." : "Sign Up"}
                         </Button>
                     </Form>
                 </Card.Body>
