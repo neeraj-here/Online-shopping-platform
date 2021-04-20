@@ -1,11 +1,12 @@
 import React, { useState, useRef, useEffect } from 'react'
 import { FaBars } from "react-icons/fa"
-import { GiHanger } from "react-icons/gi";
-import {FiLogOut} from 'react-icons/fi'
-import { links, social } from './data'
+//import { GiHanger } from "react-icons/gi";
+//import {FiLogOut} from 'react-icons/fi'
+import { links } from './data'
 import logo from './Media/logo.png'
 import { useAuth } from './AuthContext'
 import "./Navbar.css"
+import { Link } from 'react-router-dom'
 
 
 const Navbar = () => {
@@ -13,8 +14,8 @@ const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false)
   const linksContainerRef = useRef(null)
   const linksRef = useRef(null)
-  const [error, setError] = useState("")
-  const { logout } = useAuth()
+  //const [error, setError] = useState("")
+  //const { logout } = useAuth()
 
   useEffect(() => {
     const linkHeight = linksRef.current.getBoundingClientRect().height
@@ -26,23 +27,25 @@ const Navbar = () => {
     }
   }, [showLinks])
 
-  async function handleLogout() {
-    setError("")
-    try {
-      await logout()
-    }
-    catch {
-      console.log("Failed to logout!");
-    }
-  }
+  // async function handleLogout() {
+  //   setError("")
+  //   try {
+  //     await logout()
+  //   }
+  //   catch {
+  //     console.log("Failed to logout!");
+  //   }
+  // }
 
   return <nav>
    
     <div className="nav-center">
       <div className="nav-header">
-      <img src={logo} alt="logo" className="logo" />
-      <button className="nav-toggle" onClick={() => setShowLinks(!showLinks)}>
-        <FaBars />
+        <Link to='/products'>
+          <img src={logo} alt="logo" className="logo" />
+        </Link>
+        <button className="nav-toggle" onClick={() => setShowLinks(!showLinks)}>
+          <FaBars />
         </button>
       </div>
       <div className='links-container' ref={linksContainerRef}>
@@ -50,11 +53,11 @@ const Navbar = () => {
           {links.map((link) => {
             const { id, url, text } = link
             return <li key={id}>
-              <a href={url}>{text}</a>
+              <Link to={url} > {text} </Link>
             </li>
           })}
         </ul>
-        <button onClick={handleLogout}> {FiLogOut} </button>
+        { /*<button onClick={handleLogout}> {FiLogOut} </button> */}
       </div>
     </div>
   </nav>
