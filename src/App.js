@@ -29,7 +29,7 @@ function App() {
             <Route path='/contact'> <Contact /> </Route>
             <Route path='/bucket' component={Bucket} />
             <Route path='*'> <Error /> </Route>
-        </Switch>
+          </Switch>
         </BucketContextProvider>
       </Router>
     </AuthProvider>

@@ -1,12 +1,12 @@
 import React, { useState, useRef, useEffect } from 'react'
 import { FaBars } from "react-icons/fa"
-//import { GiHanger } from "react-icons/gi";
 //import {FiLogOut} from 'react-icons/fi'
 import { links } from './data'
 import logo from './Media/logo.png'
-import { useAuth } from './AuthContext'
+//import { useAuth } from './AuthContext'
 import "./Navbar.css"
 import { Link } from 'react-router-dom'
+import { useBucketContext } from './BucketContext';
 
 
 const Navbar = () => {
@@ -14,13 +14,13 @@ const Navbar = () => {
   const [showLinks, setShowLinks] = useState(false)
   const linksContainerRef = useRef(null)
   const linksRef = useRef(null)
-  //const [error, setError] = useState("")
+  const { totalQty } = useBucketContext()
   //const { logout } = useAuth()
 
   useEffect(() => {
     const linkHeight = linksRef.current.getBoundingClientRect().height
     if (showLinks) {
-      linksContainerRef.current.style.height = linkHeight+"px"
+      linksContainerRef.current.style.height = linkHeight + "px"
     }
     else {
       linksContainerRef.current.style.height = "0px"
@@ -47,6 +47,8 @@ const Navbar = () => {
         <button className="nav-toggle" onClick={() => setShowLinks(!showLinks)}>
           <FaBars />
         </button>
+        <div>{totalQty}</div>
+        <Link to='/bucket'>Bucket</Link>
       </div>
       <div className='links-container' ref={linksContainerRef}>
         <ul className="links" ref={linksRef}>
