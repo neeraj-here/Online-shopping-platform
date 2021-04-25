@@ -21,7 +21,7 @@ function Bucket() {
             <Link to='/products'> <BsBucketFill /> Add some items </Link>
         </section>
     }
-    console.log("bucket items: ", bucketItems);
+
     return (   
         <section className="bucket">
             <hr />
@@ -30,7 +30,7 @@ function Bucket() {
                 return <BucketItem key={bucketItem.productId} bucketItem = {bucketItem} />
             })}
             <div>Total Price: {totalPrice} </div>
-            <div> Total Quantity: {totalQty} </div>
+            <div> Total Items: {totalQty} </div>
         </section>
     )
 }

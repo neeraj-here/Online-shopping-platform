@@ -2,12 +2,12 @@ import React, {useState, useEffect} from 'react'
 import Product from './Product'
 import {db} from './Firebase'
 import './Products.css'
+import { useBucketContext } from './BucketContext'
 
 function Products({ setBucketItems }) {
     
     const [productsList, setProductsList] = useState([])
     const [loading, setLoading] = useState(false)
-
     const ref = db.collection("Products")
     
     function getProductsList() {

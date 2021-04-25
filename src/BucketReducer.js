@@ -9,65 +9,73 @@ const BucketReducer = (state, action) => {
     let bucketItem;
     let updatedTotQty
     let updatedTotPrice
-    let itemQty
     let index
+    let newArray
+    
+    bucketItem = action.payload.product
+    index = bucketItems.findIndex(item => item.productId === bucketItem.productId)
+
     // eslint-disable-next-line default-case
     switch (action.type) {
-        
+    
         case 'ADD_ITEM':
 
-            bucketItem = action.payload.product
             let isPresent = bucketItems.find(item => item.productId === bucketItem.productId)
-            //console.log("Is present? ", isPresent);
             if (isPresent) {
-                 console.log("Already added!");
-                itemQty = bucketItem.qty 
-                bucketItem.qty = itemQty + 1
-                index = bucketItems.findIndex(item => item.productId === bucketItem.productId)
-                bucketItems[index] = bucketItem
-                updatedTotPrice = totalPrice + bucketItem.price
+                if (bucketItems[index].qty === 6) {
+                    return state
+                } else {
+                    console.log("Already added!");
+                    newArray = [...bucketItems]
+                    newArray[index] = { ...newArray[index], qty: newArray[index].qty + 1 }
+                    updatedTotPrice = totalPrice + bucketItem.price
                 
+                    return {
+                        ...state,
+                        bucketItems: [...newArray],
+                        totalPrice: updatedTotPrice
+                    }
+                }
+            } else {
+                console.log("Item added!");
+                bucketItem['qty'] = 1
+                updatedTotQty = totalQty + 1
+                updatedTotPrice = totalPrice + bucketItem.price
+
                 return {
-                    ...state,
-                    bucketItems: [...bucketItems],
+                    bucketItems: [...bucketItems, bucketItem],
+                    totalQty: updatedTotQty,
                     totalPrice: updatedTotPrice
                 }
             }
-            //console.log("not present");
-            bucketItem['qty'] = 1
-            updatedTotQty = totalQty + 1
-            updatedTotPrice = totalPrice + bucketItem.price
+        
+        case 'CHANGE_QTY':
+
+            console.log("Quantity Changed!");
+            newArray = [...bucketItems]
+            newArray[index] = {
+                ...newArray[index],
+                qty: action.payload.changedQty
+            }
+            updatedTotPrice = totalPrice + (bucketItem.price * (action.payload.changedQty - bucketItem.qty))
 
             return {
-                bucketItems: [...bucketItems, bucketItem],
-                totalQty: updatedTotQty,
-                totalPrice: updatedTotPrice
-            }
-            break;
-        
-        case 'CHANGE_QUANTITY':
-            //console.log("Quantity changed to: ", action.payload.changedQty);
-            bucketItem = action.payload.product
-            let currentQty = bucketItem.qty
-            //console.log("old qty of the product: ", currentQty);
-            bucketItem.qty = action.payload.changedQty
-            //console.log("updated total quantity: ", updatedTotQty);
-            updatedTotPrice = Number(totalPrice) + (bucketItem.price * (bucketItem.qty - currentQty))
-            //console.log("bucket items before changing the quant: ", bucketItems);
-            bucketItems.map((item) => {
-                if (item.productId === bucketItem.productId) {
-                    return { ...bucketItem }
-                } else
-                    return { ...item }
-            })
-            //console.log("bucket items after changing the quant: ", bucketItems);
-            //console.log("END");
-            return {
                 ...state,
-                bucketItems: [...bucketItems],
+                bucketItems: [...newArray],
                 totalPrice: updatedTotPrice
             }
-            break;
+        
+        case 'REMOVE_ITEM':
+
+            updatedTotQty = totalQty - 1
+            updatedTotPrice = totalPrice - (bucketItem.price * bucketItem.qty)
+            newArray = bucketItems.filter(item => item.productId !== bucketItem.productId)
+
+            return {
+                bucketItems: [...newArray],
+                totalPrice: updatedTotPrice,
+                totalQty: updatedTotQty
+            }     
     }
 }
 

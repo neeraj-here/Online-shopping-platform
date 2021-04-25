@@ -5,7 +5,7 @@ import { useBucketContext } from './BucketContext'
 
 function Product({ product }) {
     
-    const {productId, imgUrl, brand, title, price} = product
+    const { imgUrl, brand, title, price} = product
     const { dispatch } = useBucketContext()
 
     return (
@@ -16,7 +16,7 @@ function Product({ product }) {
                 <p>{title} </p>
                 <h4>{price} </h4>
             </div>
-            <button className="add-item-btn" onClick={() => dispatch( { type: 'ADD_ITEM', payload: { product } } )} >
+            <button className="add-item-btn" onClick={() => dispatch({ type: 'ADD_ITEM', payload: { product } } )} >
                 <BsBucketFill /> Add Item
             </button>
         </article>

@@ -1,14 +1,15 @@
 import React from 'react'
+import { RiDeleteBin5Line } from 'react-icons/ri'
 import { useBucketContext } from './BucketContext'
 
 const BucketItem = ({bucketItem}) => {
 
-    const { brand, price, title, imgUrl, qty } = bucketItem
+    const { productId, brand, price, title, imgUrl, qty } = bucketItem
     const { dispatch } = useBucketContext()
 
     function handleChange(e) {
         dispatch({
-            type: 'CHANGE_QUANTITY',
+            type: 'CHANGE_QTY',
             payload: {
                 product: bucketItem,
                 changedQty: e.target.value
@@ -23,9 +24,8 @@ const BucketItem = ({bucketItem}) => {
                 <h6>Brand: {brand}</h6>
                 <p>Title: {title} </p>
                 <h4>Price: {price} </h4>
-                <h3>Qty: {qty} </h3>
-                {/*<label htmlFor='qty'> Qty </label>
-                 <select
+                <label htmlFor='qty'> Qty </label>
+                <select
                     name="qty"
                     id="qty"
                     value={qty}
@@ -38,8 +38,10 @@ const BucketItem = ({bucketItem}) => {
                     <option value="5">5</option>
                     <option value="6">6</option>
                 </select>
-                */ }
             </div>
+            <button onClick={() => dispatch({ type: 'REMOVE_ITEM', payload: {product: bucketItem, id: productId} })}>
+                <RiDeleteBin5Line />
+            </button>
         </article>
     )
 }

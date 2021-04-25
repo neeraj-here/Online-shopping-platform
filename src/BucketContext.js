@@ -19,7 +19,7 @@ function BucketContextProvider({children}) {
         dispatch,
         ...bucket,
     }
-    console.log(bucket.totalQty);
+    
     return (
         <BucketContext.Provider value={values}>
             {children}
