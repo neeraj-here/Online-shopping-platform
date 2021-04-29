@@ -5,13 +5,17 @@ import { Link } from 'react-router-dom'
 function LandingPage() {
 
     return (
-        <div className="landingPage-container">
+        <div className="Landingcontainer">
         <header>
-            <h1>Indo-Fashion</h1>
-            <h2>Buy Your Style</h2>
+            <h1 class="Landingh1">Indo-Fashion Store</h1>
+            <br/>
+            <p class="LandingPara">The One Stop Destination For All Your Fashion Needs. Click Below to Buy Your Style!</p>
+            <br></br>
+            <div class="Landingbtn">
+        <Link className="Explorelink" to='/products'><button class="Explorebtn">Explore Now</button></Link>
+        </div>
         </header>
-        <Link to='/products'>Explore Now..</Link>
-        </div>              
+        </div>               
     )
 }
 

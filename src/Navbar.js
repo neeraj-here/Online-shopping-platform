@@ -44,11 +44,14 @@ const Navbar = () => {
         <Link to='/products'>
           <img src={logo} alt="logo" className="logo" />
         </Link>
+        <div className="Toggle">
         <button className="nav-toggle" onClick={() => setShowLinks(!showLinks)}>
           <FaBars />
         </button>
-        <div>{totalQty}</div>
-        <Link to='/bucket'>Bucket</Link>
+        </div>
+        <div className="Navqty">{totalQty}</div>
+        <Link className="Navqty1" to='/bucket'>Bucket</Link>
+        
       </div>
       <div className='links-container' ref={linksContainerRef}>
         <ul className="links" ref={linksRef}>
@@ -59,7 +62,7 @@ const Navbar = () => {
             </li>
           })}
         </ul>
-        { /*<button onClick={handleLogout}> {FiLogOut} </button> */}
+        { }
       </div>
     </div>
   </nav>
