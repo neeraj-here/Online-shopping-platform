@@ -1,0 +1,110 @@
+.bucket-info{
+    display: flex;
+    flex-direction: row;
+}
+.bucket-item{
+    margin-top: 12.5px;
+    padding-top: 12.5px;
+    border-top: 2px grey;
+    border-style: solid;
+    border-width: thin;
+    border-bottom: 2px grey;
+    border-left: none;
+    border-right: none;
+}
+.bucket-photo{
+    height: 270px;
+    width: 300px;
+    padding-left: 25px;
+    border-radius: 4px;
+}
+.Bucket-h6{
+    padding-left: 30px;
+}
+.Bucket-p{
+    padding-left: 30px;
+}
+.bucket-info2{
+    padding-left: 80px;
+}
+.label-info{
+    padding-left: 70px;
+}
+.del-info{
+    padding-left: 20px;
+    
+}
+.qty{
+    font-size: 1.4em;
+    font-weight: bold;
+
+}
+.Bucketdel{
+    width: 35px;
+    height: 35px;
+    font-family:Verdana, Geneva, Tahoma, cursive;
+}
+.Bucket-h4{
+    color: crimson;
+    font-size: 1.6em;
+    font-family:'Libre Baskerville', cursive ;
+}
+.Bucket-h6{
+    font-size: 1.75em;
+    font-weight:bolder;
+    font-family:Verdana, Geneva, Tahoma, cursive;
+}
+.Bucket-p{
+    font-size:1.35em;
+    color: lightslategrey;
+    font-weight: lighter;
+    font-family: Verdana, Geneva, Tahoma, cursive;
+}
+@media screen and (max-width: 685px)
+{
+.bucket-photo{
+    height: 200px;
+    width:150px;
+    padding-left: 5px;
+}
+.Bucket-h6{
+    padding-left: 5px;
+}
+.Bucket-p{
+    padding-left: 5px;
+}
+.bucket-info2{
+    padding-left: 5px;
+}
+.label-info{
+    padding-left: 15px;
+}
+.del-info{
+    padding-left: 5px;   
+}
+.qty{
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.Bucketdel{
+    width: 25px;
+    height: 30px;
+    font-family:Verdana, Geneva, Tahoma, cursive;
+}
+.Bucket-h4{
+    color: crimson;
+    font-size: 1.4em;
+    font-family:'Libre Baskerville', cursive ;
+}
+.Bucket-h6{
+    font-size: 1.45em;
+    font-weight:bolder;
+    font-family:Verdana, Geneva, Tahoma, cursive;
+}
+.Bucket-p{
+    font-size:1.05em;
+    color: lightslategrey;
+    font-weight: lighter;
+    font-family: Verdana, Geneva, Tahoma, cursive;
+}
+}

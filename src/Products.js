@@ -27,9 +27,10 @@ function Products({ setBucketItems }) {
     }, [])
 
     if(loading){
-        return <h1>
-            Loading...
+        return <h1 className="Loading">
+            Loading! Please Wait...
         </h1>
+       
     }
     
     return (

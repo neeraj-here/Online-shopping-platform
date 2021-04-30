@@ -1,3 +1,36 @@
-.products-section {
-    display: flex
+
+.products-section{
+   background: white;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   padding-top: 30px;
+   padding-bottom: 20px;
+   
 }
+.Loading{
+   font-size: 2.6em;
+   text-align: center;
+   font-weight: bold;
+   font-family: "Great Vibes", cursive;
+   padding-top: 50px;
+}
+
+
+@media screen and (max-width: 685px){
+   .products-section{
+      flex-wrap: wrap;
+      padding-top: 4px;
+      padding-bottom: 15px;
+   }
+   .Loading{
+      font-size: 2em;
+      text-align: center;
+      font-weight: lighter;
+      font-family: "Great Vibes", cursive;
+      padding-top: 20px;
+   }
+}
+   
+
