@@ -12,6 +12,7 @@ import { AuthProvider } from "./AuthContext";
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import { BucketContextProvider } from "./BucketContext";
 import './App.css'
+import PrivateRoute from "./PrivateRoute";
 
 function App() {
 
@@ -24,10 +25,10 @@ function App() {
             <Route exact path='/'> <LandingPage /> </Route>
             <Route path='/signup' component={SignUp} />
             <Route path='/login' component={Login} />         
-            <Route path='/products'> <Products /> </Route>
+            <PrivateRoute path='/products' component={Products} /> 
             <Route path='/about'> <About /> </Route>
             <Route path='/contact'> <Contact /> </Route>
-            <Route path='/bucket' component={Bucket} />
+            <PrivateRoute path='/bucket' component={Bucket} />
             <Route path='*'> <Error /> </Route>
           </Switch>
         </BucketContextProvider>

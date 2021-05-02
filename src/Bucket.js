@@ -14,16 +14,15 @@ function Bucket() {
     if (bucketItems.length === 0) {
         return <section className="bucket">
             <hr/>
+            <h2 className="Bucket-h2">Bucket</h2>
             <div className="empty-cart">
-                <h5 className="empty-h5">It's empty! Why?</h5>
-                <br/>
-                <h6 className="empty-h6">Looking good makes you feel good. Lets add some items.</h6>
-                <br/>
-               
-                <button className="bucket-btn"><Link to='/products'> <BsBucketFill /> Add some items </Link><span><span><span><span></span></span></span></span></button>
-                
+                <div className="empty-cart-text">
+                    <h5 className="empty-h5">It's empty! Why?</h5>
+                    <p className="empty-p">Let's add some items.</p>
+                    <br/>
+                    <Link to='/products' className="bucket-btn"> <BsBucketFill /> Add some items </Link><span><span><span><span></span></span></span></span>
+                </div>
             </div>
-     
         </section>
     }
 
@@ -35,8 +34,8 @@ function Bucket() {
                 return <BucketItem key={bucketItem.productId} bucketItem = {bucketItem} />
             })}
             <div className="Bucketsummary">
-            <div className="Bucketprice">Total Price:  Rs.{totalPrice} </div>
-            <div className="Totalqty"> Total Items: x{totalQty} </div>
+                <div className="Bucketprice">Total Price:  Rs.{totalPrice} </div>
+                <div className="Totalqty"> Total Items: x{totalQty} </div>
             </div>
         </section>
     )

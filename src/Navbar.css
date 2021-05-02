@@ -60,8 +60,8 @@ Global Styles
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    background: var(--clr-white);
-    color: var(--clr-grey-1);
+  background: var(--clr-white);
+  color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
 }
@@ -78,7 +78,7 @@ Navbar
 ===============
 */
 nav {
-  background: var(--clr-red-dark);
+  background: var(--clr-white);
   box-shadow: var(--light-shadow);
 }
 .nav-header {
@@ -89,24 +89,22 @@ nav {
 }
 .nav-toggle {
   font-size: 1.5rem;
-  color: var(--clr-white);
+  color: var(--clr-grey-3);
   background: transparent;
   border-color: transparent;
   transition: var(--transition);
   cursor: pointer;
-  
-  
 }
 .nav-toggle:hover {
-  color: var(--clr-primary-5);
+  color: var(--clr-primary-8);
   transform: rotate(90deg);
 }
 .logo {
-  height: 80px;
+  height: 50px;
 }
 .links a {
-  color: var(--clr-white);
-  font-size: 1rem;
+  color: var(--clr-grey-3);
+  font-size: 1.2rem;
   text-transform: capitalize;
   letter-spacing: var(--spacing);
   display: block;
@@ -117,7 +115,6 @@ nav {
   background: var(--clr-primary-8);
   color: var(--clr-primary-5);
   padding-left: 1.5rem;
-  font-weight: bolder;
 }
 .social-icons {
   display: none;
@@ -128,7 +125,7 @@ nav {
   transition: var(--transition);
 }
 .picks a {
-  color: var(--clr-grey-10);
+  color: var(--clr-grey-3);
   font-size: 1.5rem;
   text-transform: capitalize;
   letter-spacing: var(--spacing);
@@ -143,37 +140,6 @@ nav {
 *:focus {
   outline: 0 !important;
 }
-.log {
-  align-items: flex-end;
-  width: 15px;
-  display: block;
-  padding: 0.5rem 0.6rem;
-}
-.hanger {
-  align-items: flex-end;
-  width: 15px;
-  display: block;
-  padding: 0.5rem 0.6rem;
-}
-.Navqty1{
-  float: right;
-  color: azure;
-  text-decoration: none;
-  font-weight: bold;
-
-}
-.Navqty1:hover{
-  text-decoration: none;
-  color: var(--clr-primary-5);
-}
-.Navqty{
-  padding-left: 10px;
-}
-.Toggle{
-  padding-left: 165px;
-}
-
-
 @media screen and (min-width: 800px) {
   .nav-center {
     max-width: 1170px;
@@ -215,17 +181,4 @@ nav {
   .social-icons a:hover {
     color: var(--clr-primary-7);
   }
-  .Toggle{
-    display: none;
-  }
-  .Navqty{
-    padding-left: 650px;
-    text-decoration: none;
-    
-  }
-  .Navqty:hover{
-    text-decoration: none;
-    color: var(--clr-primary-5);
-  }
-  
 }

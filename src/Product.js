@@ -16,7 +16,7 @@ function Product({ product }) {
             <div className="Info">          
                 <h6 className="Producth6">{brand}</h6>
                 <p className="Productp">{title} </p>
-                <h3 className="Producth3">{price} </h3>  
+                <h3 className="Producth3">Rs. {price} </h3>  
             </div>         
             <button className="add-item-btn" data-hover="Click to Add" onClick={() => dispatch({ type: 'ADD_ITEM', payload: { product } } )}><div><BsBucketFill />Add to Cart</div> </button>         
             </div>

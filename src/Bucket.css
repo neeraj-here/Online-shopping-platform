@@ -1,141 +1,146 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
-.bucket-btn{
-    --c:rgb(123, 123, 247);
-    color: black;
-    font-size: 16px;
-    background-color: rgba(140, 140, 247, 0.767);
-    border: 0.3em solid var(--c);
-    border-radius: 2em;
-    width: 15em;
-    height: 3.2em;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-family: sans-serif;
-    letter-spacing: 0.1em;
-    text-align: center;
-    line-height: 3em;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-    transition: 0.5s;
-    margin: 1em;
-    font-weight: lighter;
+.bucket-btn {
+  --c: rgb(123, 123, 247);
+  color: black;
+  font-size: 16px;
+  background-color: rgba(140, 140, 247, 0.767);
+  border: 0.3em solid var(--c);
+  border-radius: 2em;
+  width: 15em;
+  height: 3.2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: sans-serif;
+  letter-spacing: 0.1em;
+  text-align: center;
+  line-height: 3em;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
+  margin: 1em;
+  font-weight: lighter;
 }
 
 .bucket-btn span {
-    position: absolute;
-    width: 25%;
-    height: 100%;
-    background-color: var(--c);
-    transform: translateY(150%);
-    border-radius: 50%;
-    left: calc((var(--n) - 1) * 25%);
-    transition: 0.5s;
-    transition-delay: calc((var(--n) - 1) * 0.1s);
-    z-index: -1;
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: var(--c);
+  transform: translateY(150%);
+  border-radius: 50%;
+  left: calc((var(--n) - 1) * 25%);
+  transition: 0.5s;
+  transition-delay: calc((var(--n) - 1) * 0.1s);
+  z-index: -1;
 }
 
 .bucket-btn:hover {
-    color: black;
+  color: black;
 }
 
 .bucket-btn:hover span {
-    transform: translateY(0) scale(2);
+  transform: translateY(0) scale(2);
 }
 
 .bucket-btn span:nth-child(1) {
-    --n: 1;
+  --n: 1;
 }
 
 .bucket-btn span:nth-child(2) {
-    --n: 2;
+  --n: 2;
 }
 
 .bucket-btn span:nth-child(3) {
-    --n: 3;
+  --n: 3;
 }
 
 .bucket-btn span:nth-child(4) {
-    --n: 4;
+  --n: 4;
 }
-.empty-cart{
-    background-image: url("Media/Cart1.jpeg");
-    background-size: cover;
-      background-repeat: no-repeat;
-      background-position: top center;
-    width: 450px;
-    height: 300px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
+.empty-cart {
+  background-image: url("Media/Cart1.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  width: 450px;
+  height: 378px;
+  position: absolute;
+  top: 15px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
-.empty-h5{
-    padding-left: 18px;
-    font-size: 2.2em;
-    font-style: normal;
-    font-weight: bold;
-    
+.empty-cart-text {
+  margin-top: 30%;
+  margin-left: 15%;
 }
-.empty-h6{
-    padding-left: 18px;
-    font-size: 1.6em;
-    font-weight: lighter;
-    font-family: "Great Vibes", cursive;
+.empty-h5 {
+  padding-left: 18px;
+  font-size: 2 em;
+  font-style: normal;
+  font-weight: 800;
 }
-.Bucket-h2{
-    background-color: rgb(243, 19, 19);
-    
-    color: #f2f2f2;
-    width: 100%;
-    height: 50px;
-    font-weight: bolder;
-    text-align: center;
-    font-style: italic;
-    font-size: 2em;
-    text-shadow: 1.5px 1.5px deepskyblue;
-
+.empty-p {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 18px;
+  font-size: 1.4em;
+  font-weight: 100;
+  font-family: "Noto Sans JP", sans-serif;
 }
-.bucket{
-    padding-top: 0px;
+.Bucket-h2 {
+  background: linear-gradient(to right, rgb(250, 108, 108), rgb(202, 3, 3));
+  color: #f2f2f2;
+  width: 100%;
+  height: 50px;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 2em;
+  text-shadow: 1.5px 1.5px black;
 }
-.Bucketsummary{
-    margin-top: 25px;
-    margin-bottom: 35px;
-   background-image: linear-gradient(to right, rgb(60,233,60,1) , rgb(8,128,8,.95));
+.bucket {
+  padding-top: 0px;
+}
+.Bucketsummary {
+  margin-top: 25px;
+  margin-bottom: 35px;
+  background-image: linear-gradient(
+    to right,
+    rgb(60, 233, 60, 1),
+    rgb(8, 128, 8, 0.95)
+  );
+  padding-top: 15px;
+  text-align: center;
+}
+.Totalqty {
+  padding-bottom: 40px;
+  padding-right: 316.5px;
+  color: white;
+  font-weight: lighter;
+  font-size: 1.4em;
+}
+.Bucketprice {
+  padding-top: 5px;
+  padding-right: 260px;
+  padding-bottom: 10px;
+  color: white;
+  font-weight: lighter;
+  font-size: 1.5em;
+}
+@media screen and (max-width: 685px) {
+  .Bucketsummary {
+    margin-top: 15px;
+    background-image: linear-gradient(
+      to right,
+      rgb(8, 128, 8, 0.95),
+      rgb(60, 233, 60, 1)
+    );
     padding-top: 15px;
-    text-align: right;
-  
-    
-}
-.Totalqty{
-    padding-bottom: 40px;
-    padding-right: 316.5px;
-    color:white;
-    font-weight: lighter;
-    font-size: 1.4em;
-}
-.Bucketprice{
-    padding-top: 5px;
-    padding-right: 260px;
-    padding-bottom: 10px;
-    color:white;
-    font-weight: lighter;
-    font-size: 1.5em;
-}
-@media screen and (max-width: 685px)
-{
-    .Bucketsummary{
-        margin-top: 15px;
-        background-image: linear-gradient(to right, rgb(8,128,8,.95) , rgb(60,233,60,1));
-        padding-top: 15px;
-    
-      
-        
-    }
+  }
 }

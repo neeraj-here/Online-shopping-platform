@@ -30,16 +30,16 @@ const BucketItem = ({bucketItem}) => {
                 <p className="Bucket-p">{title}</p>
             </div>
             <div className="bucket-info2">
-            <p className="Bucket-h4">{price} </p>
+            <p className="Bucket-h4">Rs.{price} </p>
             </div> 
             <div className="label-info">  
                 <label className="qty" htmlFor='qty'> Qty: </label>
-                <select>
+                <select
                     name="qty"
                     id="qty"
                     value={qty}
                     onChange={handleChange}
-                
+                >
                     <option value='1'>1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
