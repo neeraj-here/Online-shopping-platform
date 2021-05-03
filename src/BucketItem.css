@@ -41,6 +41,7 @@
 .Bucketdel {
   width: 35px;
   height: 35px;
+  border: none;
   /* font-family:Verdana, Geneva, Tahoma, cursive; */
 }
 .Bucket-h4 {

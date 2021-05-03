@@ -118,12 +118,16 @@ const Navbar = () => {
         <Link to='/products'>
           <img src={logo} alt="logo" className="logo" />
         </Link>
+        <div className="Toggle">
         <button className="nav-toggle" onClick={() => setShowLinks(!showLinks)}>
           <FaBars />
         </button>
-        <div>{totalQty}</div>
-        <div><button onClick={handleLogout}> {currentUser ? "Log Out" : "Log In"} </button></div>
-        <Link to='/bucket'>Bucket</Link>
+        </div>
+        <div className="Wholebkt">
+        <div className="Navqty">{totalQty}</div>
+        <Link className="Navqty1" to='/bucket'>Bucket</Link>
+        <div className="Outbtn"><button className="Outbtncc" onClick={handleLogout}> {currentUser ? "Log Out" : "Log In"} </button></div>
+        </div>
       </div>
       <div className='links-container' ref={linksContainerRef}>
         <ul className="links" ref={linksRef}>

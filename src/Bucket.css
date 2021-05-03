@@ -116,11 +116,11 @@
     rgb(8, 128, 8, 0.95)
   );
   padding-top: 15px;
-  text-align: center;
+  text-align: right;
 }
 .Totalqty {
   padding-bottom: 40px;
-  padding-right: 316.5px;
+  padding-right: 307.5px;
   color: white;
   font-weight: lighter;
   font-size: 1.4em;
@@ -142,5 +142,8 @@
       rgb(60, 233, 60, 1)
     );
     padding-top: 15px;
+  }
+  .Bucket-h2{
+    background: linear-gradient(to right, rgb(202, 3, 3), rgb(250, 108, 108));
   }
 }

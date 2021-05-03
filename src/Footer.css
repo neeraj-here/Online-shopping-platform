@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+ }
+ .center{
+     background-color: black;
+     color: white;
+     padding: 9px 20px;
+     text-align: center;
+     position: fixed;
+     bottom: 0;
+     width: 100%;
+ }
+ 
+ 

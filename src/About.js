@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import "./About.css"
 import { db } from './Firebase'
 
 const About = () => {

@@ -89,14 +89,15 @@ nav {
 }
 .nav-toggle {
   font-size: 1.5rem;
-  color: var(--clr-grey-3);
+  color: var(--clr-black);
   background: transparent;
   border-color: transparent;
   transition: var(--transition);
   cursor: pointer;
+  
 }
 .nav-toggle:hover {
-  color: var(--clr-primary-8);
+  color: var(--clr-primary-5);
   transform: rotate(90deg);
 }
 .logo {
@@ -140,6 +141,42 @@ nav {
 *:focus {
   outline: 0 !important;
 }
+.Navqty1{
+  float: right;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+
+}
+.Navqty1:hover{
+  text-decoration: none;
+  color: var(--clr-primary-5);
+}
+.Navqty:hover{
+  color: var(--clr-primary-5);
+}
+.Toggle{
+  padding-left: 155px;
+}
+.Outbtncc{
+  font-size: .86em;
+  padding: none;
+ border: none;
+}
+.Outbtncc:hover{
+  background-color: var(--clr-primary-5);
+  color: white;
+  border: none;
+}
+.Wholebkt{
+  display: flex;
+}
+.Navqty{
+  padding-right: 2px;
+}
+.Outbtn{
+  margin-left: 10px;
+}
 @media screen and (min-width: 800px) {
   .nav-center {
     max-width: 1170px;
@@ -158,6 +195,7 @@ nav {
   .links-container {
     /* margin: 0 0 0 25%; */
     height: auto !important;
+    padding-left: 55px;
   }
   .links {
     display: flex;
@@ -180,5 +218,25 @@ nav {
   }
   .social-icons a:hover {
     color: var(--clr-primary-7);
+  }
+  .Outbtn{
+    margin-left: 20px;
+  }
+  .Wholebkt{
+    padding-left:450px;
+    display: flex;
+  }
+  .Navqty{
+    padding-right: 3px;
+  }
+  .Outbtncc{
+    font-size: .86em;
+    padding: 4px;
+    border: none;
+  }
+  .Outbtncc:hover{
+    background-color: var(--clr-primary-5);
+    color: white;
+    border: none;
   }
 }
