@@ -1,12 +1,13 @@
 import React, {useState, useEffect} from 'react'
 import Product from './Product'
 import {db} from './Firebase'
+import Filters from './Filters'
 import './Products.css'
-import { useBucketContext } from './BucketContext'
 
 function Products({ setBucketItems }) {
     
     const [productsList, setProductsList] = useState([])
+    const [allProducts, setAllProducts] = useState([])
     const [loading, setLoading] = useState(false)
     const ref = db.collection("Products")
     
@@ -18,10 +19,10 @@ function Products({ setBucketItems }) {
                 items.push({ ...doc.data(), productId: doc.id })
             })
             setProductsList(items)
+            setAllProducts(items)
             setLoading(false)
         })
     }
-
     useEffect(() => {
         getProductsList()
     }, [])
@@ -29,17 +30,21 @@ function Products({ setBucketItems }) {
     if(loading){
         return <h1 className="Loading">
             Loading! Please Wait...
-        </h1>
-       
+        </h1> 
     }
     
-    return (
+    return (<>
+        <Filters allProducts={allProducts} productsList={productsList} setProductsList={setProductsList} />
+        <div className="products-found">{productsList.length} product{(productsList.length > 2) && 's'} found.
+            {(productsList.length === 0) && <p>Try modifying the filters.</p>}
+        </div>
         <main className="products-section">
-        { productsList.map((product) => {
-            return <Product key={product.productId} product={product} setBucketItems={setBucketItems}  />
-        })
+        {productsList.map( (product) => {
+            return <Product key={product.productId} product={product} />
+        } )
         }
         </main>
+        </>
     )
 }
 

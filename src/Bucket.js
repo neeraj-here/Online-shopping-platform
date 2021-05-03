@@ -2,14 +2,12 @@ import React from 'react'
 import { BsBucketFill } from 'react-icons/bs'
 import { useBucketContext } from './BucketContext'
 import './Bucket.css'
-import { useAuth } from './AuthContext'
 import { Link } from 'react-router-dom'
 import BucketItem from './BucketItem'
 
 function Bucket() {
 
     const { bucketItems, totalPrice, totalQty } = useBucketContext()
-    const { currentUser } = useAuth()
 
     if (bucketItems.length === 0) {
         return <section className="bucket">

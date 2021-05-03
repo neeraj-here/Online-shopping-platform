@@ -1,6 +1,5 @@
 
 .products-section{
-   background: white;
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
