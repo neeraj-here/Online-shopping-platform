@@ -1,15 +1,17 @@
 *{
     box-sizing: border-box;
 }
+
 .single-product{ 
   width: 33%; 
-  margin-top: 12px; 
-   
+  margin-top: 12px;   
 }
+
 .tile{
   width: 100%;
   padding-top: 20px;
 }
+
 .Info{
   width: 100%;
   padding-top: 10px;
@@ -17,6 +19,7 @@
   display: block;
   /* padding-left: 102px; */
 }
+
 .photo{
     display: block;
     margin-left: auto;

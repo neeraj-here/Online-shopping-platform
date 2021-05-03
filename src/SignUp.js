@@ -5,32 +5,15 @@ import {db} from './Firebase'
 import {Link, useHistory} from 'react-router-dom'
 
 function SignUp() {
+    
     const emailRef = useRef()
     const passwordRef = useRef()
     const passwordConfirmRef = useRef()
-    const { signup, currentUser } = useAuth()
+    const { signup } = useAuth()
     const [error, setError] = useState("")
     const [loading, setLoading] = useState(false)
     const history = useHistory()
     
-    // function handleSubmit(e) {
-    //     e.preventDefault()
-    //     if (passwordRef.current.value !== passwordConfirmRef.current.value) {
-    //         return setError('Passowords do not match!')
-    //     }
-    //     setError('')
-    //     setLoading(true)
-    //     signup(emailRef.current.value, passwordRef.current.value).then((cred) => {
-    //         db.collection('SignedUpUserData').doc(cred.user.uid).set({
-    //             email: emailRef.current.value,
-    //             password: passwordRef.current.value
-    //         }) 
-    //     }).then(() => {
-    //         history.push('/home')
-    //     }).catch(() => setError("Something is Wrong. Failed to create an account!"))
-    //     setLoading(false)
-    // }
-
     function handleSubmit(e) {
          e.preventDefault()
          if (passwordRef.current.value !== passwordConfirmRef.current.value) {
