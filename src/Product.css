@@ -8,6 +8,7 @@
 }
 .tile{
   width: 100%;
+  padding-top: 20px;
 }
 .Info{
   width: 100%;
@@ -54,6 +55,7 @@
   font-size: 1.2em;
   padding-bottom: 0px;
   margin-bottom: 0px;
+  font-weight: bold;
 }
 
 
@@ -109,7 +111,7 @@
           .tile{
             width:100%;
             box-shadow: 1px 1px 1px lightgrey;
-            
+            padding-top: 0px;
           }
           .photo{
             width:97.5%;
@@ -127,13 +129,13 @@
             margin-left: auto;
             margin-right: auto;
           }
-          .Info{
+          /*.Info{
             width: 100%;
             float: left;
             position: relative;
             left: -39%;
             padding-top: 16px;
-          }
+          }*/
           .add-item-btn div{
             font-size: 0.6em;
           }
@@ -144,6 +146,9 @@
             font-size: 1.3em;
             font-weight: bold;
             
+          }
+          .Producth6{
+            font-weight: bold;
           }
 
       }
