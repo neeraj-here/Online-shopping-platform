@@ -124,8 +124,7 @@ const Navbar = () => {
         </button>
         </div>
         <div className="Wholebkt">
-        <div className="Navqty">{totalQty}</div>
-        <Link className="Navqty1" to='/bucket'>Bucket</Link>
+        <Link className="Navqty1" to='/bucket'>Bucket({totalQty})</Link>
         <div className="Outbtn"><button className="Outbtncc" onClick={handleLogout}> {currentUser ? "Log Out" : "Log In"} </button></div>
         </div>
       </div>

@@ -1,5 +1,5 @@
 *{
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .single-product{ 
@@ -31,9 +31,9 @@
     border-radius: 4px;
     transition: transform .2s;
     box-shadow: 4px 4px 4px #ccc;
-      -moz-box-shadow: 4px 4px 4px #ccc;
-      -webkit-box-shadow: 4px 4px 4px #ccc;
-      -khtml-box-shadow: 4px 4px 4px #ccc;
+    -moz-box-shadow: 4px 4px 4px #ccc;
+    -webkit-box-shadow: 4px 4px 4px #ccc;
+    -khtml-box-shadow: 4px 4px 4px #ccc;
 
 }
 .photo:hover {
@@ -44,21 +44,21 @@
   }
 
 .Productp{
-    color:black;
-    font-size: 1.1em; 
+    color:rgba(0, 0, 0, 0.637);
+    font-size: 1em; 
     font-weight:lighter;
     margin-bottom: 0px;
 }
 .Producth3{
-  font-size: 1.18em;
+  font-size: 1em;
   font-weight: bold;
   padding-top: 0px; 
 }
 .Producth6{
-  font-size: 1.2em;
+  font-size: 1.1em;
   padding-bottom: 0px;
   margin-bottom: 0px;
-  font-weight: bold;
+  font-weight: 400;
 }
 
 
@@ -146,7 +146,7 @@
             font-size: 0.6em;
           }
           .Producth3{
-            font-size: 1.3em;
+            font-size: 1.1em;
             font-weight: bold;
             
           }

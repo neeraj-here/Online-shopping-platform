@@ -79,7 +79,7 @@ Navbar
 */
 nav {
   background: var(--clr-white);
-  box-shadow: var(--light-shadow);
+  box-shadow: var(--dark-shadow);
 }
 .nav-header {
   display: flex;
@@ -160,13 +160,16 @@ nav {
 }
 .Outbtncc{
   font-size: .86em;
-  padding: none;
- border: none;
+  padding: 1.5px;
+  border: 1px dotted orange;
+  color: orange;
+  background-color: #fff;
+  font-weight: 800;
+  border-radius: 4px;
 }
 .Outbtncc:hover{
-  background-color: var(--clr-primary-5);
-  color: white;
-  border: none;
+  background-color: #fcbb4233;
+  border: 1px dotted orange;
 }
 .Wholebkt{
   display: flex;
@@ -176,6 +179,7 @@ nav {
 }
 .Outbtn{
   margin-left: 10px;
+  
 }
 @media screen and (min-width: 800px) {
   .nav-center {
@@ -195,7 +199,8 @@ nav {
   .links-container {
     /* margin: 0 0 0 25%; */
     height: auto !important;
-    padding-left: 55px;
+    padding-left: 0px;
+    margin-top: 7.8px;
   }
   .links {
     display: flex;
@@ -232,11 +237,15 @@ nav {
   .Outbtncc{
     font-size: .86em;
     padding: 4px;
-    border: none;
+    color: orange;
+    font-weight: 800;
+    border: 1px dotted orange;
+    background-color: white;
+    border-radius: 5px;
   }
   .Outbtncc:hover{
-    background-color: var(--clr-primary-5);
-    color: white;
-    border: none;
+    background-color: #fcbb4233;
+    color: orange;
+    border: 1px dotted orange;
   }
 }
