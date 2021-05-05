@@ -100,7 +100,8 @@ const Navbar = () => {
   }, [showLinks])
 
   async function handleLogout(e) {
-    if (e.target.value === "Log In") {
+    console.log(e.target.innerText);
+    if (e.target.innerText === "Log In") {
       history.push('/login')
     }
     try {
