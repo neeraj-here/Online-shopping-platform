@@ -37,8 +37,8 @@
 
 }
 .photo:hover {
-    -ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    -ms-transform: scale(1.05); /* IE 9 */
+    -webkit-transform: scale(1.05); /* Safari 3-8 */
     transform: scale(1.05); 
     box-shadow: 0px 0px 0px #ccc;
   }
@@ -52,13 +52,14 @@
 .Producth3{
   font-size: 1em;
   font-weight: bold;
-  padding-top: 0px; 
+  padding-top: 4px; 
 }
 .Producth6{
   font-size: 1.1em;
   padding-bottom: 0px;
   margin-bottom: 0px;
-  font-weight: 400;
+  font-weight:bold;
+  padding-bottom: 4px;
 }
 
 
@@ -103,6 +104,16 @@
         font-weight: 800;
         font-size: .8em;
         transition: all .3s ease-in-out;
+      }
+      .size{
+        padding-left: 8px;
+      }
+      .sizes{
+        padding-bottom: 3px;
+      }
+      .size:hover{
+        font-weight:bold;
+        cursor: pointer;
       }
       @media screen and (max-width: 685px)	  
       {

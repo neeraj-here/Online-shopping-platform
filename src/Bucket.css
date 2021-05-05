@@ -109,7 +109,7 @@
 }
 .Bucketsummary {
   margin-top: 25px;
-  margin-bottom: 35px;
+  /*margin-bottom: 35px;*/
   background-image: linear-gradient(
     to right,
     rgb(60, 233, 60, 1),
@@ -120,19 +120,118 @@
 }
 .Totalqty {
   padding-bottom: 40px;
-  padding-right: 307.5px;
-  color: white;
-  font-weight: lighter;
+  padding-right: 250px;
+  color: black;
+  font-weight:bold;
   font-size: 1.4em;
+  font-family: 'Spartan';
+  
 }
 .Bucketprice {
   padding-top: 5px;
-  padding-right: 260px;
   padding-bottom: 10px;
-  color: white;
-  font-weight: lighter;
+  color: black;
+  font-weight:bold;
   font-size: 1.5em;
+  padding-right: 250px;
+  font-family: 'Spartan';
 }
+.ordersummary{
+  color: black;
+  font-weight: bolder;
+  font-size: 1.8em;
+  padding-bottom: 10px;
+  padding-right: 250px;
+  font-family: 'Spartan';
+}
+*{
+  margin: 0;
+  padding: 0;}
+
+.Whole{
+  background: url("Media/checkoutbg.jpg") center center no-repeat;
+  background-size: cover;
+  width: 100wh;
+  height: 150vh;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  font-size: 12pt;
+  font-family: 'Spartan';
+  color: #2a293e}
+  
+.checkoutfinal{
+  background: #f8f4e5;
+  padding: 50px 100px;
+  border-top: 10px solid #f45702;
+  width: 50%;
+  height: 85%;
+  }
+ 
+.checklabel, .checkinput, .checktextarea{
+  display: block;
+  width: 100%;
+  font-size: 12pt;
+  line-height: 12pt * 2;
+  font-family: 'Spartan';}
+    
+.checkinput{
+  margin-bottom: 12pt * 2;
+  height: 50px;}
+.checklabel{
+    font-size: 1.5em;
+    padding-bottom: 5px;
+    margin-top: 15px;
+}
+    
+.checkh3{
+  font-weight: normal;
+  font-size: 10pt;
+  line-height: 12pt * 2;
+  font-style: italic;
+  margin: 0 0 .5em 0;
+margin-top: 15px;}
+    
+
+  
+.checkinput, .checktextarea{
+  border: none;
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 2px;
+  background: #f8f4e5;
+  padding-left: 5px;
+  outline: none;}
+  
+.checkinput:focus, .checktextarea:focus{
+  border: 1px solid #6bd4b1;}
+ 
+.checktextarea{
+  resize: none;}
+  
+.checkbutton{
+  display: block;
+  float: right;
+  line-height: 12pt * 2;
+  padding: 0 20px;
+  border: none;
+  background: #f45702;
+  color: white;
+  letter-spacing: 2px;
+  transition: .2s all ease-in-out;
+  border-bottom: 2px solid transparent;
+  outline: none;
+  height: 50px;
+  margin-top: 25px;}
+  
+.checkbutton:hover{
+    background: inherit;
+    color: #f45702;
+    border-bottom: 2px solid #f45702;
+  font-weight: bold;}
+  
+::selection {
+  background: rgb(255, 199, 184);}
+
 @media screen and (max-width: 685px) {
   .Bucketsummary {
     margin-top: 15px;
@@ -142,8 +241,37 @@
       rgb(60, 233, 60, 1)
     );
     padding-top: 15px;
+    text-align: left;
+    padding-left: 25px;
   }
   .Bucket-h2{
     background: linear-gradient(to right, rgb(202, 3, 3), rgb(250, 108, 108));
   }
+  .ordersummary,.Bucketprice,.Totalqty {
+    padding-right: 0;
+  }
+  .checkoutfinal{
+   
+    padding: 0px 0px;
+    border-top: 10px solid #f45702;
+    width: 80%;
+    height: 90%;
+    }
+  .checkbutton{
+    float: left;
+    margin-left: 125px;
+  }  
+  .checklabel, .checkinput, .checktextarea{
+    width: 80%;
+    margin-left: 40px;
+  }
+  .checkh3{
+    padding-left: 40px;
+    padding-top: 10px;
+    font-size: 8.5pt;
+  }
+  .checkh2{
+    text-align: center;
+  }
+  
 }

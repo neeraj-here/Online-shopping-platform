@@ -80,32 +80,32 @@ const Filters = ({setProductsList, allProducts, }) => {
             
             {/* For selection of Colors */}
             <label className="color" htmlFor='color'> Color </label>
-            <select
+            <select className="fselect"
                 name="color"
                 id="color"
                 value={selectedColor}
                 onChange={handleChange}
             >
-                <option value="all"> all </option>
+                <option value="all"> All </option>
                 {colors.map((color, index) => <option key={index} value={color}> {color} </option>)}
             </select>
 
             {/* For selection of gender */}
             <label className="gender" htmlFor='gender'> For </label>
-            <select
+            <select className="fselect"
                 name="gender"
                 id="gender"
                 value={gender}
                 onChange={handleChange}
             >
-                <option value="both"> both </option>
-                <option value="male"> a male </option>
-                <option value="female">a female </option>
+                <option value="both"> Both </option>
+                <option value="male"> Men </option>
+                <option value="female"> Women </option>
             </select>
 
             {/* For selection of price */}
             <label className="price" htmlFor='price'> Price </label>
-            <select
+            <select className="fselect"
                 name="price"
                 id="price"
                 value={price}

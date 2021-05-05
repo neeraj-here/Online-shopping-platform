@@ -33,7 +33,7 @@ const BucketItem = ({bucketItem}) => {
                 </div> 
                 <div className="label-info">  
                     <label className="qty" htmlFor='qty'> Qty: </label>
-                    <select
+                    <select className="bselect"
                         name="qty"
                         id="qty"
                         value={qty}

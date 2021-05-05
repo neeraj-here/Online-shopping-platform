@@ -32,8 +32,28 @@ function Bucket() {
                 return <BucketItem key={bucketItem.productId} bucketItem = {bucketItem} />
             })}
             <div className="Bucketsummary">
+                <u><div className="ordersummary">Order Summary </div></u>
                 <div className="Bucketprice">Total Price:  Rs.{totalPrice} </div>
                 <div className="Totalqty"> Total Items: x{totalQty} </div>
+            </div>
+            <div className="Whole">
+                <h2 className="checkh2">Please enter the following details to Order.</h2>
+                <div className="checkoutfinal">
+                    <form action="#">
+                    <label class="checklabel" for="customerName">Name</label>
+        <input class="checkinput" type="text" id="customerName" name="customerName" required=""/>
+        <label class="checklabel"for="customerPhone">Phone</label>
+        <input class="checkinput" type="tel" id="customerphone" name="customerPhone" required="" pattern="[0-9] {10}"/>
+        <label class="checklabel" for="orderNumber">Pincode</label>
+        <input class="checkinput" type="tel" id="orderNumber" name="orderNumber" required=""/>
+        <label class="checklabel" for="customerNote">Address</label>
+        <textarea class="checktextarea" rows="4" id="customerNote" name="customerNote" required=""></textarea>
+        <label class="checklabel" for="customerEmail">Landmark</label>
+        <input class="checkinput" type="text" id="customerEmail" name="customerEmail" required=""/>
+                    </form>
+                    <h3 class="checkh3">*Enter all the above details. Mail/Call for replacements/returns.</h3>
+    <button class="checkbutton" id="customerOrder">CHECKOUT</button>
+                </div>
             </div>
         </section>
     )

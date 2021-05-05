@@ -45,6 +45,11 @@
     margin-top: 8px;
     width: 100%;
     border-radius: 9px;
+    font-weight: bold;
+  }
+  .Contactbtn:hover{
+    background-color: #fcbb4233;
+
   }
   .contactip input,.contactip textarea{
     width: 100%;
@@ -63,6 +68,21 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
+  }
+  .Contactinfo{
+    padding-top: 25px;
+    text-align: center;
+    background-color:whitesmoke;
+  }
+  .coh2{
+    font-weight: bold;
+  }
+  .coh3{
+    font-weight: bold;
+    padding-bottom: 10px;
+  }
+  .coh4{
+    font-weight: bolder;
   }
   @media screen and (max-width: 685px){
       .ContactUs{
