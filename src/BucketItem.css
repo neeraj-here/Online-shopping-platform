@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: row;
 }
+
 .bucket-item {
   margin-top: 12.5px;
   padding-top: 12.5px;
@@ -35,7 +36,7 @@
   padding-left: 20px;
 }
 .qty {
-  font-size: 1.4em;
+  font-size: 1.2em;
   font-weight: bold;
 }
 .Bucketdel {
@@ -48,8 +49,13 @@
   line-height: 4px;
   /* font-family:Verdana, Geneva, Tahoma, cursive; */
 }
+.Bucketdel:hover{
+  -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1);
+}
 .Bucket-h4 {
-  color: #000000;
+  color: crimson;
   font-size: 1.4em;
   font-weight: bolder;
   /* font-family:'Libre Baskerville', cursive ; */
@@ -65,6 +71,7 @@
   font-weight: lighter;
   /* font-family: Verdana, Geneva, Tahoma, cursive; */
 }
+
 @media screen and (max-width: 685px) {
   .bucket-photo {
     height: 200px;
@@ -101,6 +108,7 @@
     color: crimson;
     font-size: 1.4em;
     font-family: "Libre Baskerville", cursive;
+    font-weight: lighter;
   }
   .Bucket-h6 {
     font-size: 1.45em;

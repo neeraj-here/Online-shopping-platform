@@ -1,0 +1,32 @@
+.filters-container{
+    text-align: center;
+    margin-top: 25px;
+}
+.gender{
+    margin-left: 15px;
+    font-weight: bold;
+}
+.price{
+    margin-left: 15px;
+    font-weight: bold;
+}
+.fselect{
+    margin-left: 5px;
+}
+
+.fselect {
+    background-color: #0563af;
+    color: white;
+    padding: 0px;
+    width: 100px;
+    border: none;
+    font-size: 0.9em;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+  }
+  .color{
+    font-weight: bold;
+  }
+  

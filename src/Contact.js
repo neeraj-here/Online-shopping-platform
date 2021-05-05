@@ -56,7 +56,19 @@ const Contact = () => {
             </div>
             </div>
             <div className="Contactinfo">
-                <h3>Add More Stuff</h3>
+                <h2 className="coh2">Contact Details</h2>
+                <p>Email: support@indo-fashion.in</p>
+                <p>Toll Free No.: 1800-080-6156-1999</p>
+                <br/>
+                <h3 className="coh3">Want to reach us old style? Here is our postal address</h3>
+                <h4 className="coh4">Returns Processing Facility</h4>
+                <p>Nayapalli and Clover</p>
+                <p>Outer Ring Road, Bhubaneswar</p>
+                <p>751001</p>
+                <h4 className="coh4">Corporate Office</h4>
+                <p>Buildings Alyssa</p>
+                <p>Embassy Tech Village, Bhubaneswar</p>
+                <p>751007</p>
             </div>
         </div>    
             
