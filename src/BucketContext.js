@@ -11,7 +11,6 @@ function BucketContextProvider({children}) {
 
     const initialState = {
         bucketItems: [],
-        totalQty: 0,
         totalPrice: 0
     }
     const [bucket, dispatch] = useReducer(BucketReducer, initialState)

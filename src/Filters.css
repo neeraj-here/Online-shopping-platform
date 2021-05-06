@@ -1,7 +1,7 @@
 .filters-container{
     text-align: center;
     margin-top: 25px;
-}
+} 
 .gender{
     margin-left: 15px;
     font-weight: bold;
@@ -10,13 +10,10 @@
     margin-left: 15px;
     font-weight: bold;
 }
-.fselect{
-    margin-left: 5px;
-}
 
 .fselect {
-    background-color: #0563af;
-    color: white;
+    background-color: #fff;
+    color: rgb(0, 0, 0);
     padding: 0px;
     width: 100px;
     border: none;
@@ -24,9 +21,12 @@
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
     -webkit-appearance: button;
     appearance: button;
+    border-radius: 8px;
+    text-align: center;
     outline: none;
+    margin-left: 5px;
   }
+
   .color{
     font-weight: bold;
-  }
-  
+  } 

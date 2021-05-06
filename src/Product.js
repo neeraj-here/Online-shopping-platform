@@ -17,7 +17,7 @@ function Product({ product }) {
                     <h6 className="Producth6">{brand}</h6>
                     <p className="Productp">{title} </p>
                     <h3 className="Producth3">Rs. {price} </h3>
-                    <div className="sizes"> {sizes.map(size => <span className="size">{size}</span>)} </div>
+                    <div className="sizes"> {sizes.map((size, index) => <span key={index} className="size">{size}</span>)} </div>
                 </div>         
                 <button
                     className="add-item-btn"

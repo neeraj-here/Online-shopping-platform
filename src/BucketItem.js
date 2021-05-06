@@ -48,7 +48,7 @@ const BucketItem = ({bucketItem}) => {
                     </select>
                 </div>
                 <div className="del-info">
-                    <button className="Bucketdel" onClick={() => dispatch({ type: 'REMOVE_ITEM', payload: {product: bucketItem, id: productId} })}>
+                    <button title="Remove item" className="Bucketdel" onClick={() => dispatch({ type: 'REMOVE_ITEM', payload: {product: bucketItem, id: productId} })}>
                     <RiDeleteBin5Line />
                     </button>
                 </div>  

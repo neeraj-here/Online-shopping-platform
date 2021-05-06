@@ -35,7 +35,7 @@ function Products({ setBucketItems }) {
     
     return (<>
         <Filters allProducts={allProducts} productsList={productsList} setProductsList={setProductsList} />
-        <div className="products-found">{productsList.length} product{(productsList.length > 2) && 's'} found.
+        <div className="products-found">{productsList.length} product{(productsList.length > 2) && 's'} available.
             {(productsList.length === 0) && <p>Try modifying the filters.</p>}
         </div>
         <main className="products-section">

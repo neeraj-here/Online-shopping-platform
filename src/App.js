@@ -8,18 +8,25 @@ import Login from './Login'
 import Products from './Products'
 import About from './About'
 import Contact from './Contact'
+import Payment from './Payment'
 import { AuthProvider } from "./AuthContext";
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
-import { BucketContextProvider } from "./BucketContext";
+import { BucketContextProvider, useBucketContext } from "./BucketContext";
 import './App.css'
 import PrivateRoute from "./PrivateRoute";
+import Footer from './Footer'
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
+
+  const { bucketItems, totalPrice } = useBucketContext()
+  const totalItems = bucketItems.length
+  const totalPieces = bucketItems.reduce((pieces, item) => Number(pieces) + Number(item.qty), 0)
 
   return (
     <AuthProvider>
       <Router>
-        <BucketContextProvider>
           <Navbar />
           <Switch>
             <Route exact path='/'> <LandingPage /> </Route>
@@ -29,9 +36,13 @@ function App() {
             <Route path='/about'> <About /> </Route>
             <Route path='/contact'> <Contact /> </Route>
             <PrivateRoute path='/bucket' component={Bucket} />
+            <Route path='/payment'>
+              <Payment totalItems={totalItems} totalPieces={totalPieces} totalPrice={totalPrice} />
+            </Route>
             <Route path='*'> <Error /> </Route>
           </Switch>
-        </BucketContextProvider>
+          <ToastContainer />
+          <Footer />
       </Router>
     </AuthProvider>
   );

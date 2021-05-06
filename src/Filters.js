@@ -32,10 +32,8 @@ const Filters = ({setProductsList, allProducts, }) => {
         }
 
         if (price === "all") {
-            console.log("filtering by price(into if)");
             setProductsList(newProductList)
         } else {
-            console.log("filtering by price(into else)");
             if (price === "Under Rs.500") {
                 newProductList = newProductList.filter(product => product.price < 500)
             } else if (price === "Rs.500 to Rs.1000") {
@@ -86,7 +84,7 @@ const Filters = ({setProductsList, allProducts, }) => {
                 value={selectedColor}
                 onChange={handleChange}
             >
-                <option value="all"> All </option>
+                <option  className="option" value="all"> All </option>
                 {colors.map((color, index) => <option key={index} value={color}> {color} </option>)}
             </select>
 

@@ -4,7 +4,7 @@ import "./Footer.css"
 function Footer() {
     return (
         <footer>
-        <div class="center">
+        <div className="center">
             Copyright &copy; 9th Street, Bhubaneswar. All rights reserved!
         </div>
         </footer> 

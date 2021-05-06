@@ -1,5 +1,4 @@
 import React, { useRef, useState } from 'react'
-import { useHistory } from 'react-router-dom'
 import { db } from './Firebase'
 import "./Contact.css"
 

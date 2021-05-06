@@ -8,68 +8,64 @@ body, html {
   
   .Landingcontainer {
     /* The image used */
-    background-image: url("Media/Img3.jpg");
-  
+    background-image: url("Media/Img3.jpg"); 
     height: 100vh;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: top center;
-      border: 3px solid white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    border: 3px solid white;
   }
   header{
-       height: 89%;
-      align-items: center;
-      padding: 40px;
-      color: white;
+    height: 89%;
+    align-items: center;
+    padding: 40px;
+    color: white;
   }
   .Landingh1{
-      color: #ff4a4a;
-      font-family: "Great Vibes", cursive;
-      font-size: 120px;
-      line-height: 160px;
-      font-weight: 1000; 
-      margin-bottom: 0px;
-      margin-top: 20px;
-      text-align: center;
-      text-shadow: 0 1px 1px #fff;
+    color: #ff4a4a;
+    font-family: "Great Vibes", cursive;
+    font-size: 120px;
+    line-height: 160px;
+    font-weight: 1000; 
+    margin-bottom: 0px;
+    margin-top: 20px;
+    text-align: center;
+    text-shadow: 0 1px 1px #fff;
   }
   .LandingPara{
-      padding-top: 20px;
-      color: #f2f2f2;
-      background: #ff4a4a; 
-      font-size: 30px;
-      line-height: 50px;
-      font-weight: 700;
-      margin: 0 5px 24px; 
-      padding: 10px; 
-      margin: 0 5px 24px;
-      font-family: 'Libre Baskerville', serif;
-      text-align: center;
+    padding-top: 20px;
+    color: #f2f2f2;
+    background: #ff4a4a; 
+    font-size: 30px;
+    line-height: 50px;
+    font-weight: 700;
+    margin: 0 5px 24px; 
+    padding: 10px; 
+    margin: 0 5px 24px;
+    font-family: 'Libre Baskerville', serif;
+    text-align: center;
   }
   
   .Explorebtn{
-      padding: 12px 20px;
-      border: 2px solid orange;
-      background-color: #f2f2f2;
-      color: #ff4a4a;
-      margin: 17px;
-      font-size: 1.5rem;
-      font-weight:bold;
-      border-radius: 200px;
-      cursor:pointer;
-     
-      
+    padding: 12px 20px;
+    border: 2px solid orange;
+    background-color: #f2f2f2;
+    color: #ff4a4a;
+    margin: 17px;
+    font-size: 1.5rem;
+    font-weight:bold;
+    border-radius: 200px;
+    cursor:pointer;      
   }
   .Landingbtn{
-      padding-left: 620px;
-
+    padding-left: 620px;
   }
   .Explorebtn:hover{
-      opacity:0.8;
-      background:#ff4a4a;
-      color:#f2f2f2;
-      font-weight:bold;
-      border:none;
+    opacity:0.8;
+    background:#ff4a4a;
+    color:#f2f2f2;
+    font-weight:bold;
+    border:none;
   }
   @media screen and (max-width: 685px)
   {

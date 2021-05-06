@@ -101,7 +101,8 @@
   height: 50px;
   font-weight: bolder;
   text-align: center;
-  font-size: 2em;
+  font-size: 1.7em;
+  line-height: normal;
   text-shadow: 1.5px 1.5px black;
 }
 .bucket {
@@ -109,7 +110,6 @@
 }
 .Bucketsummary {
   margin-top: 25px;
-  /*margin-bottom: 35px;*/
   background-image: linear-gradient(
     to right,
     rgb(60, 233, 60, 1),
@@ -121,28 +121,25 @@
 .Totalqty {
   padding-bottom: 40px;
   padding-right: 250px;
-  color: black;
+  color: rgb(44, 40, 40);
   font-weight:bold;
-  font-size: 1.4em;
-  font-family: 'Spartan';
+  font-size: 1.1em;
   
 }
 .Bucketprice {
   padding-top: 5px;
   padding-bottom: 10px;
-  color: black;
+  color: rgb(44, 40, 40);
   font-weight:bold;
-  font-size: 1.5em;
+  font-size: 1.1em;
   padding-right: 250px;
-  font-family: 'Spartan';
 }
 .ordersummary{
-  color: black;
+  color: rgb(0, 0, 0);
   font-weight: bolder;
-  font-size: 1.8em;
+  font-size: 1.4em;
   padding-bottom: 10px;
   padding-right: 250px;
-  font-family: 'Spartan';
 }
 *{
   margin: 0;
