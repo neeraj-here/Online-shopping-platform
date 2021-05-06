@@ -51,7 +51,7 @@ const Contact = () => {
                 <label>Message : </label>
                 <textarea placeholder="Your message" ref={messageRef}></textarea>
                 </div>
-                    <button className="Contactbtn" onClick={handleSubmit} disable={loading}>{loading ? "Sending..." : "Send"}</button>
+                    <button className="Contactbtn" onClick={handleSubmit} disable={loading}> {loading ? "Sending..." : "Send"} </button>
             </div>
             </div>
             <div className="Contactinfo">

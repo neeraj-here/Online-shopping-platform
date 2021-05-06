@@ -8,8 +8,8 @@ body, html {
   
   .Landingcontainer {
     /* The image used */
-    background-image: url("Media/Img3.jpg"); 
-    height: 100vh;
+    background-image: url("Media/Media-temp.jpg"); 
+    height: 90vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
@@ -17,12 +17,13 @@ body, html {
   }
   header{
     height: 89%;
+    width: 50%;
     align-items: center;
     padding: 40px;
     color: white;
   }
-  .Landingh1{
-    color: #ff4a4a;
+  /* .Landingh1{
+    color: #312c2c;
     font-family: "Great Vibes", cursive;
     font-size: 120px;
     line-height: 160px;
@@ -31,26 +32,27 @@ body, html {
     margin-top: 20px;
     text-align: center;
     text-shadow: 0 1px 1px #fff;
-  }
+  } */
   .LandingPara{
     padding-top: 20px;
-    color: #f2f2f2;
-    background: #ff4a4a; 
-    font-size: 30px;
-    line-height: 50px;
+    color: #4b4747;
+    /*background: #ff4a4a; */
+    font-size: 5.2em;
+    line-height: 1.05em;
     font-weight: 700;
     margin: 0 5px 24px; 
     padding: 10px; 
     margin: 0 5px 24px;
-    font-family: 'Libre Baskerville', serif;
-    text-align: center;
+    font-family: "gilroy-bold";/*, "Noto Sans JP", sans-serif;*/
+    text-transform: lowercase;
+    text-align: left;
   }
   
   .Explorebtn{
     padding: 12px 20px;
-    border: 2px solid orange;
+    border: 2px solid rgb(31, 30, 30);
     background-color: #f2f2f2;
-    color: #ff4a4a;
+    color: #4b4747;
     margin: 17px;
     font-size: 1.5rem;
     font-weight:bold;
@@ -58,23 +60,27 @@ body, html {
     cursor:pointer;      
   }
   .Landingbtn{
-    padding-left: 620px;
+    padding-left: 50px;
   }
-  .Explorebtn:hover{
-    opacity:0.8;
-    background:#ff4a4a;
-    color:#f2f2f2;
-    font-weight:bold;
-    border:none;
-  }
+
   @media screen and (max-width: 685px)
   {
+    .Landingcontainer{
+      background-image: url("Media/Media-temp-1.jpg"); 
+    }
    .Landingbtn{
-       padding-left: 95px;
+       padding-left: 20px;
    }
    .Landingh1{
        font-size: 42px;
        margin-top: 0px;
        font-weight: bolder;
+   }
+   header{
+     width: 65%;
+   }
+   .LandingPara{
+     font-size: 3.4em;
+     line-height: .95em;
    }
   }

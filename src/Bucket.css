@@ -154,7 +154,6 @@
   align-items: center;
   justify-items: center;
   font-size: 12pt;
-  font-family: 'Spartan';
   color: #2a293e}
   
 .checkoutfinal{
@@ -170,7 +169,7 @@
   width: 100%;
   font-size: 12pt;
   line-height: 12pt * 2;
-  font-family: 'Spartan';}
+}
     
 .checkinput{
   margin-bottom: 12pt * 2;

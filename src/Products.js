@@ -3,6 +3,7 @@ import Product from './Product'
 import {db} from './Firebase'
 import Filters from './Filters'
 import './Products.css'
+import Loading from './Loading'
 
 function Products({ setBucketItems }) {
     
@@ -29,7 +30,7 @@ function Products({ setBucketItems }) {
 
     if(loading){
         return <h1 className="Loading">
-            Loading! Please Wait...
+            <Loading />
         </h1> 
     }
     

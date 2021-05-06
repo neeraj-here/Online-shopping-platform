@@ -42,7 +42,6 @@ function App() {
             <Route path='*'> <Error /> </Route>
           </Switch>
           <ToastContainer />
-          <Footer />
       </Router>
     </AuthProvider>
   );

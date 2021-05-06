@@ -35,7 +35,7 @@ Variables
   --clr-red-light: hsl(360, 71%, 66%);
   --clr-green-dark: hsl(125, 67%, 44%);
   --clr-green-light: hsl(125, 71%, 66%);
-  --clr-black: #222;
+  --clr-black: rgb(15, 11, 11);
   --transition: all 0.2s linear;
   --spacing: 0.1rem;
   --radius: 0.25rem;
