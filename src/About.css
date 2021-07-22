@@ -23,6 +23,8 @@ body {
   .row{
     width: 95%;
     padding-left: 95px;
+    display: flex;
+    justify-content: center;
   }
   
   .card {

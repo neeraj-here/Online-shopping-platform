@@ -11,7 +11,6 @@ const Contact = () => {
     const [loading, setLoading] = useState(false)
 
     function handleSubmit(e) {
-        console.log("handling submit");
         if (emailRef.current.value !== "") {
             setLoading(true)
             db.collection('CustomerFeedbacks').doc(emailRef.current.value).set({
@@ -20,7 +19,6 @@ const Contact = () => {
                 phone: phoneRef.current.value,
                 message: messageRef.current.value
             }).then(() => {
-                console.log("sent!");
                 nameRef.current.value = ""
                 emailRef.current.value = ""
                 phoneRef.current.value = ""
@@ -37,15 +35,15 @@ const Contact = () => {
                 <h1>Get in Touch!</h1>
                 <div className="contactip">
                 <label>Name : </label>
-                <input className="frmName" type="text" placeholder="e.g. Rajan Dudeja" required ref={nameRef}></input>
+                <input className="frmName" type="text" placeholder="e.g. Rahul" required ref={nameRef}></input>
                 </div>
                 <div className="contactip">
                 <label>Email : </label>
-                <input className="frmMail" type="email" placeholder="e.g. rajan@email.com" required ref={emailRef}></input>
+                <input className="frmMail" type="email" placeholder="e.g. csecec.1835296@email.com" required ref={emailRef}></input>
                 </div>
                 <div className="contactip">
                 <label>Phone : </label>
-                <input className="frmNun" type="phone" placeholder="9999988888" required ref={phoneRef}></input>
+                <input className="frmNun" type="phone" placeholder="7876657310" required ref={phoneRef}></input>
                 </div>
                 <div className="contactip">
                 <label>Message : </label>
